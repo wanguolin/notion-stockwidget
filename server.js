@@ -20,10 +20,8 @@ app.get('/notion', async (req, res) => {
   });
 
 app.get('/charts/adv_realtime/:ticker', (req, res) => {
-console.log('req.params', req.params.ticker);
-
-const ticker = req.params.ticker;
-res.render('chart/adv_realtime/index', { ticker });
+    const ticker = req.params.ticker;
+    res.render('chart/adv_realtime/index', { ticker });
 });
   
 //   app.get('*', (req, res) => {
