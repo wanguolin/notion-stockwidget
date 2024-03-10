@@ -6,6 +6,8 @@ const port = process.env.PORT || 3000;
 
 // Serve static files from the 'public' directory
 app.use(express.static(path.join(__dirname, 'public')));
+app.set('view engine', 'ejs');
+app.set('views', path.join(__dirname, 'view'));
 
 
 app.listen(port, () => {
@@ -17,7 +19,14 @@ app.get('/notion', async (req, res) => {
     res.redirect(notionUrl);
   });
 
-  app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public/index.html'));
-  });
+app.get('/tradingview/charts/:ticker', (req, res) => {
+console.log('req.params', req.params.ticker);
+
+const ticker = req.params.ticker;
+res.render('tradingview/charts/index', { ticker });
+});
   
+//   app.get('*', (req, res) => {
+//     res.sendFile(path.join(__dirname, 'public/index.html'));
+//   });
+
