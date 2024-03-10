@@ -14,7 +14,7 @@ app.listen(port, () => {
   console.log(`Server running on port ${port}`);
 });
 
-app.get('/notion', async (req, res) => {
+app.get('/', async (req, res) => {
     const notionUrl = 'https://gentiles.notion.site/5a8cbff1c86042599e62f47f4973c503?pvs=4';
     res.redirect(notionUrl);
   });
