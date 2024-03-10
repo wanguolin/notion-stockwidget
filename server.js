@@ -19,11 +19,11 @@ app.get('/notion', async (req, res) => {
     res.redirect(notionUrl);
   });
 
-app.get('/tradingview/charts/:ticker', (req, res) => {
+app.get('/charts/adv_realtime/:ticker', (req, res) => {
 console.log('req.params', req.params.ticker);
 
 const ticker = req.params.ticker;
-res.render('tradingview/charts/index', { ticker });
+res.render('chart/adv_realtime/index', { ticker });
 });
   
 //   app.get('*', (req, res) => {
