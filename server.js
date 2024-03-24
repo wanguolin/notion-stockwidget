@@ -15,8 +15,8 @@ app.listen(port, () => {
 });
 
 app.get('/', async (req, res) => {
-    const notionUrl = 'https://gentiles.notion.site/5a8cbff1c86042599e62f47f4973c503?pvs=4';
-    res.redirect(notionUrl);
+    // const notionUrl = 'https://gentiles.notion.site/5a8cbff1c86042599e62f47f4973c503?pvs=4';
+    // res.redirect(notionUrl);
   });
 
 app.get('/charts/adv_realtime/:ticker', (req, res) => {
