@@ -25,7 +25,7 @@ This project is based on [notion-stockwidget](https://github.com/yannickfunk/not
 
 ### 部署
 
-推荐使用 Netlify 进行一键部署。
+推荐使用 Netlify 或 Vercel 进行一键部署。
 
 如果你使用这个项目为你自己的 Notion 创建小部件，请 fork 并为本仓库点星！
 
@@ -47,7 +47,7 @@ Feel free to check out my investment notes: [https://isnow-stock.notion.site](ht
 
 ### Deployment
 
-Netlify is recommended for one-click deploys.
+Netlify or Vercel is recommended for one-click deploys.
 
 If you use this for your own Notion, please fork and star the repo!
 
